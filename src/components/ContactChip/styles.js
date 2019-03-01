@@ -25,6 +25,10 @@ export const Name = styled.span`
   font-size: 12px;
   margin-left: 8px;
   margin-right: 8px;
+  max-width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 export const IconRemove = styled.i`
