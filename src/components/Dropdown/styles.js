@@ -8,6 +8,7 @@ const activeCss = css`
 
 export const Container = styled.button`
   display: flex;
+  align-items: center;
   position: relative;
   padding: 8px;
   background: #7159C1;
@@ -15,16 +16,23 @@ export const Container = styled.button`
   border-radius: 4px;
   color: #fff;
 
-  & > i {
-    font-size: 18px;
-    align-self: flex-end;
-  }
-
   ${props => props.active && activeCss}
 `;
 
 export const Label = styled.span`
   margin-right: 8px;
+`;
+
+export const Caret = styled.div`
+  width: 0;
+  height: 0;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
 `;
 
 export const Menu = styled.div`
