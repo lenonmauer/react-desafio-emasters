@@ -48,7 +48,7 @@ class App extends Component {
           <Ballon referral={<Button type="button">Ballon right</Button>} position="right" message="Balloon message!" />
         </div>
 
-        <div>
+        <div style={{ maxWidth: '300px' }}>
           <Title>Card</Title>
           <Card
             title="Example Card"

@@ -4,7 +4,6 @@ export const Container = styled.div`
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-radius: 3px;
   background: #fff;
-  width: 300px;
 `;
 
 export const Header = styled.div`
@@ -21,9 +20,10 @@ export const Body = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 300px;
+  width: 100%;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  object-fit: cover;
 `;
 
 export const Content = styled.div`
