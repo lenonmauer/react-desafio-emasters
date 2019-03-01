@@ -8,7 +8,7 @@ import Dropdown from './components/Dropdown';
 
 import GlobalStyle from './styles/global';
 import {
-  Container, Button, Title,
+  Container, Button, Title, CardContainer,
 } from './styles/components';
 
 class App extends Component {
@@ -29,6 +29,8 @@ class App extends Component {
   };
 
   render() {
+    const { options } = this.state;
+
     return (
       <Container>
         <GlobalStyle />
@@ -48,7 +50,7 @@ class App extends Component {
           <Ballon referral={<Button type="button">Ballon right</Button>} position="right" message="Balloon message!" />
         </div>
 
-        <div style={{ maxWidth: '300px' }}>
+        <CardContainer>
           <Title>Card</Title>
           <Card
             title="Example Card"
@@ -58,11 +60,11 @@ class App extends Component {
               lectus, in posuere sem commodo blandit. Etiam et scelerisque eros. Integer rhoncus
               convallis leo eu feugiat. Duis bibendum malesuada.
           </Card>
-        </div>
+        </CardContainer>
 
         <div>
           <Title>Dropdown</Title>
-          <Dropdown label="Menu item" options={this.state.options} onOptionSelected={this.onOptionSelected} />
+          <Dropdown label="Menu item" options={options} onOptionSelected={this.onOptionSelected} />
         </div>
       </Container>
     );
