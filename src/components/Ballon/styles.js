@@ -80,11 +80,13 @@ export const Container = styled.div`
 
   &:hover > :first-child {
     opacity: 1;
+    visibility: visible;
   }
 `;
 
 export const Tooltip = styled.div`
-  z-index: -1;
+  z-index: 10;
+  visibility: hidden;
   position: absolute;
   opacity: 0;
   background: black;
