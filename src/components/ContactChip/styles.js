@@ -31,8 +31,8 @@ export const Name = styled.span`
   text-overflow: ellipsis;
 `;
 
-export const IconRemove = styled.i`
-  font-size: 18px;
+export const IconRemove = styled.img`
   margin-right: 6px;
+  width: 16px;
   cursor: pointer;
 `;
