@@ -5,7 +5,6 @@ import 'react-toastify/dist/ReactToastify.css';
 const globalStyle = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 * {
   margin: 0;
