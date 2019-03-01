@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import {
-  Container, Label, Menu, MenuItem,
+  Container, Label, Caret, Menu, MenuItem,
 } from './styles';
 
 class Dropdown extends Component {
@@ -20,11 +20,12 @@ class Dropdown extends Component {
 
   render() {
     const { label, options, onOptionSelected } = this.props;
+    const { active } = this.state;
 
     return (
-      <Container onClick={this.toggleActive} active={this.state.active}>
+      <Container onClick={this.toggleActive} active={active}>
         <Label>{label}</Label>
-        <i className="material-icons">arrow_drop_down</i>
+        <Caret />
         <Menu>
           {
             options.map(option => (
