@@ -4,69 +4,64 @@ const positions = {
   top: css`
     bottom: 100%;
     left: 50%;
-    transform: translate(-50%, -13px);
+    transform: translate(-50%, -8px);
 
     &:before {
       content: '';
-      width: 10px;
-      height: 10px;
-      bottom: -6px;
+      width: 6px;
+      height: 6px;
+      bottom: -3px;
       left: 50%;
       position: absolute;
       background: black;
-      z-index: -1;
       transform: rotate(45deg);
     }
   `,
   left: css`
     right: 100%;
     top: 50%;
-    transform: translate(-13px, -50%);
+    transform: translate(-8px, -50%);
 
     &:before {
       content: '';
-      width: 10px;
-      height: 10px;
-      right: -6px;
-      top: 8px;
+      width: 6px;
+      height: 6px;
+      right: -3px;
+      top: 10px;
       position: absolute;
       background: black;
-      z-index: -1;
       transform: rotate(45deg);
     }
   `,
   right: css`
     left: 100%;
     top: 50%;
-    transform: translate(13px, -50%);
-
+    transform: translate(8px, -50%);
 
     &:before {
       content: '';
-      width: 10px;
-      height: 10px;
-      left: -6px;
-      top: 8px;
+      width: 6px;
+      height: 6px;
+      left: -3px;
+      top: 10px;
       position: absolute;
       background: black;
-      z-index: -1;
       transform: rotate(45deg);
     }
   `,
   bottom: css`
     top: 100%;
     left: 50%;
-    transform: translate(-50%, 13px);
+    transform: translate(-50%, 8px);
 
     &:before {
       content: '';
-      width: 10px;
-      height: 10px;
-      top: -6px;
+      width: 6px;
+      height: 6px;
+      top: -3px;
       left: 50%;
       position: absolute;
       background: black;
-      z-index: -1;
       transform: rotate(45deg);
     }
   `,
