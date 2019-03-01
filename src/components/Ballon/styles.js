@@ -25,7 +25,6 @@ const positions = {
 
     &:before {
       content: '';
-      content: '';
       width: 10px;
       height: 10px;
       right: -6px;
@@ -44,7 +43,6 @@ const positions = {
 
     &:before {
       content: '';
-      content: '';
       width: 10px;
       height: 10px;
       left: -6px;
@@ -61,7 +59,6 @@ const positions = {
     transform: translate(-50%, 13px);
 
     &:before {
-      content: '';
       content: '';
       width: 10px;
       height: 10px;
@@ -94,7 +91,6 @@ export const Tooltip = styled.div`
   color: #fff;
   padding: .5em 1em;
   font-size: 12px;
-  font-family: sans-serif;
   font-weight: normal;
   font-style: normal;
   text-shadow: none;
