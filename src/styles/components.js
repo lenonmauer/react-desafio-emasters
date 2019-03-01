@@ -27,3 +27,7 @@ export const Title = styled.div`
   text-align: center;
   margin-bottom: 10px;
 `;
+
+export const CardContainer = styled.div`
+  max-width: 300px;
+`;
